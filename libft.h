@@ -6,7 +6,7 @@
 /*   By: scleerdi <scleerdi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/08 14:22:55 by scleerdi      #+#    #+#                 */
-/*   Updated: 2022/02/08 14:32:04 by simoncleerd   ########   odam.nl         */
+/*   Updated: 2022/02/08 16:55:54 by scleerdi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <stdlib.h>
 # include <fcntl.h>
 # define BUFFER_SIZE 25
-
 
 typedef struct s_list
 {
@@ -40,8 +39,8 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_itoa(int n);
 char	*ft_strnew(size_t n);
 char	*ft_strdup(const char *s1);
+char	*ft_strndup(const char *s1, size_t n); //has abort
 char	*ft_get_next_line(const int fd);
-char	*ft_strndup(const char *s1, size_t n);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strcpy(char *dst, const char *src);
@@ -56,7 +55,7 @@ void	ft_bzero(void *s, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memset(void *b, int c, size_t len);
-void	*ft_memmove(void *str1, const void *str2, size_t n); //check and replace with single function variant
+void	*ft_memmove(void *str1, const void *str2, size_t n);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);

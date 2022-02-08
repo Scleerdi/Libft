@@ -6,13 +6,13 @@
 /*   By: simoncleerdin <simoncleerdin@student.co      +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/02/08 14:08:33 by simoncleerd   #+#    #+#                 */
-/*   Updated: 2022/02/08 14:09:32 by simoncleerd   ########   odam.nl         */
+/*   Updated: 2022/02/08 16:41:24 by scleerdi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	num_len(int n)
+size_t	ft_num_len(int n)
 {
 	size_t	len;
 

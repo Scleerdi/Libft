@@ -6,7 +6,7 @@
 /*   By: simoncleerdin <simoncleerdin@student.co      +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/02/08 14:24:55 by simoncleerd   #+#    #+#                 */
-/*   Updated: 2022/02/08 16:55:33 by scleerdi      ########   odam.nl         */
+/*   Updated: 2022/02/09 17:32:19 by simoncleerd   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strndup(const char *s1, size_t n)
 	char	*s2;
 
 	i = 0;
-	s2 = ftcalloc(n + 1, sizeof(char));
+	s2 = ft_calloc(n + 1, sizeof(char));
 	if (!s2)
 		return (NULL);
 	while (i < n && s1 != NULL)

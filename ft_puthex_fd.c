@@ -1,18 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_putchar_fd.c                                    :+:    :+:            */
+/*   ft_puthex_fd.c                                     :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: scleerdi <scleerdi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2021/11/08 14:21:24 by scleerdi      #+#    #+#                 */
-/*   Updated: 2022/02/11 16:11:46 by scleerdi      ########   odam.nl         */
+/*   Created: 2022/02/11 16:09:47 by scleerdi      #+#    #+#                 */
+/*   Updated: 2022/02/11 16:32:30 by scleerdi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_putchar_fd(char c, int fd)
+int	ft_puthex_fd(unsigned int n, int fd)
 {
-	return (write(fd, &c, 1));
+	char	*s;
+
+	s = ft_utoa_base(n, 8);
+	return (write(fd, s, ft_strlen(s)));
 }

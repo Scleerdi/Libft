@@ -6,7 +6,7 @@
 /*   By: scleerdi <scleerdi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/08 14:22:55 by scleerdi      #+#    #+#                 */
-/*   Updated: 2022/02/08 16:55:54 by scleerdi      ########   odam.nl         */
+/*   Updated: 2022/02/11 16:32:06 by scleerdi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,11 @@ int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
 int		ft_isspace(int c);
+void	ft_putnbr_fd(int n, int fd);
+int		ft_putchar_fd(char c, int fd);
+int		ft_putstr_fd(char const *s, int fd);
+int		ft_putuns_fd(unsigned int n, int fd);
+int		ft_puthex_fd(unsigned int n, int fd);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_itoa(int n);
@@ -51,15 +56,13 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	**ft_split(char const *s, char c);
 char	*ft_strtrim(char const *s1, char const *set);
+char	*ft_utoa_base(size_t value, size_t base);
 void	ft_bzero(void *s, size_t n);
+void	ft_putendl_fd(char const *s, int fd);
 void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memset(void *b, int c, size_t len);
 void	*ft_memmove(void *str1, const void *str2, size_t n);
-void	ft_putchar_fd(char c, int fd);
-void	ft_putendl_fd(char const *s, int fd);
-void	ft_putnbr_fd(int n, int fd);
-void	ft_putstr_fd(char const *s, int fd);
 void	*ft_calloc(size_t count, size_t size);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 size_t	ft_num_len(int n);

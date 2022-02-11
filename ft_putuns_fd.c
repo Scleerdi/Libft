@@ -1,18 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_putchar_fd.c                                    :+:    :+:            */
+/*   ft_putuns_fd.c                                     :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: scleerdi <scleerdi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2021/11/08 14:21:24 by scleerdi      #+#    #+#                 */
-/*   Updated: 2022/02/11 16:11:46 by scleerdi      ########   odam.nl         */
+/*   Created: 2022/02/11 15:42:39 by scleerdi      #+#    #+#                 */
+/*   Updated: 2022/02/11 17:05:54 by scleerdi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_putchar_fd(char c, int fd)
+int	ft_putuns_fd(unsigned int n, int fd)
 {
-	return (write(fd, &c, 1));
+	char	*s;
+
+	s = ft_utoa_base(n, 10);
+	return (write(fd, s, ft_strlen(s)));
 }

@@ -6,7 +6,7 @@
 #    By: scleerdi <scleerdi@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2021/11/08 14:23:00 by scleerdi      #+#    #+#                  #
-#    Updated: 2022/02/08 14:30:48 by simoncleerd   ########   odam.nl          #
+#    Updated: 2022/02/11 16:32:09 by scleerdi      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,8 +17,8 @@ SOURCE = atoi bzero isalnum isalpha isascii isdigit isprint \
 		strrchr strncmp strlcat memchr memcmp calloc strdup strndup \
 		substr strcat strtrim itoa split strmapi striteri isspace \
 		isupper islower strnew num_len strnlen strclen get_next_line \
-		lstnew lstadd_front lstsize lstadd_back \
-		lstlast lstiter lstdelone lstclear lstmap
+		lstnew lstadd_front lstsize lstadd_back utoa_base putuns_fd \
+		puthex_fd lstlast lstiter lstdelone lstclear lstmap
 
 SOURCE := $(SOURCE:%=ft_%.c)
 OBJECT := $(SOURCE:%.c=%.o)

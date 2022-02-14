@@ -6,7 +6,7 @@
 /*   By: scleerdi <scleerdi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/08 14:22:55 by scleerdi      #+#    #+#                 */
-/*   Updated: 2022/02/11 16:32:06 by scleerdi      ########   odam.nl         */
+/*   Updated: 2022/02/14 16:25:33 by scleerdi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ void	*ft_memset(void *b, int c, size_t len);
 void	*ft_memmove(void *str1, const void *str2, size_t n);
 void	*ft_calloc(size_t count, size_t size);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
-size_t	ft_num_len(int n);
+int		ft_num_len(int n);
 size_t	ft_strlcpy(char *dst, char const *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlen(const char *str);

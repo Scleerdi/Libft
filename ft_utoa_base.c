@@ -6,7 +6,7 @@
 /*   By: scleerdi <scleerdi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/02/11 16:03:42 by scleerdi      #+#    #+#                 */
-/*   Updated: 2022/02/14 16:08:32 by scleerdi      ########   odam.nl         */
+/*   Updated: 2022/02/16 15:24:04 by scleerdi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,8 @@ char	*ft_utoa_base(size_t value, size_t base)
 	else
 		i = usize_str(value, base) - 1;
 	str = umem_str(i);
+	if (!str)
+		return (NULL);
 	if (value == 0)
 		str[0] = '0';
 	while (value != 0)

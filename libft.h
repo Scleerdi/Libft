@@ -6,7 +6,7 @@
 /*   By: scleerdi <scleerdi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/08 14:22:55 by scleerdi      #+#    #+#                 */
-/*   Updated: 2022/02/14 16:25:33 by scleerdi      ########   odam.nl         */
+/*   Updated: 2022/02/17 15:51:29 by scleerdi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_itoa(int n);
 char	*ft_strnew(size_t n);
 char	*ft_strdup(const char *s1);
-char	*ft_strndup(const char *s1, size_t n); //has abort
+char	*ft_strndup(const char *s1, size_t n);
 char	*ft_get_next_line(const int fd);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);

@@ -6,7 +6,7 @@
 /*   By: scleerdi <scleerdi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/02/11 16:03:42 by scleerdi      #+#    #+#                 */
-/*   Updated: 2022/02/16 15:24:04 by scleerdi      ########   odam.nl         */
+/*   Updated: 2022/02/23 17:16:11 by scleerdi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,6 @@ int	usize_str(size_t value, int base)
 	return (i);
 }
 
-char	*umem_str(int i)
-{
-	char	*str;
-
-	str = ft_calloc(i + 1, sizeof(int));
-	return (str);
-}
-
 char	convert(size_t n)
 {
 	if (n < 10)
@@ -52,7 +44,7 @@ char	*ft_utoa_base(size_t value, size_t base)
 		i = 0;
 	else
 		i = usize_str(value, base) - 1;
-	str = umem_str(i);
+	str = ft_calloc(i, sizeof(int));
 	if (!str)
 		return (NULL);
 	if (value == 0)

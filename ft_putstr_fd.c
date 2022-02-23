@@ -6,7 +6,7 @@
 /*   By: scleerdi <scleerdi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/08 14:21:47 by scleerdi      #+#    #+#                 */
-/*   Updated: 2022/02/16 15:37:43 by scleerdi      ########   odam.nl         */
+/*   Updated: 2022/02/23 16:28:01 by scleerdi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 int	ft_putstr_fd(char const *s, int fd)
 {
-	if (!s)
+	if (s == NULL)
 	{
-		write(fd, "NULL", 4);
-		return (0);
+		write(fd, "(null)", 7);
+		return (6);
 	}
 	return (write(fd, s, ft_strlen(s)));
 }

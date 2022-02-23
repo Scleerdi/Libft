@@ -6,7 +6,7 @@
 /*   By: scleerdi <scleerdi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/08 14:22:55 by scleerdi      #+#    #+#                 */
-/*   Updated: 2022/02/17 15:51:29 by scleerdi      ########   odam.nl         */
+/*   Updated: 2022/02/23 15:47:44 by scleerdi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,6 @@ int		ft_isspace(int c);
 void	ft_putnbr_fd(int n, int fd);
 int		ft_putchar_fd(char c, int fd);
 int		ft_putstr_fd(char const *s, int fd);
-int		ft_putuns_fd(unsigned int n, int fd);
 int		ft_puthex_fd(unsigned int n, int fd);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);

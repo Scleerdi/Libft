@@ -1,23 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_putendl_fd.c                                    :+:    :+:            */
+/*   ft_puthex_fd.c                                     :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: scleerdi <scleerdi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2021/11/08 14:21:37 by scleerdi      #+#    #+#                 */
-/*   Updated: 2022/07/20 17:12:24 by scleerdi      ########   odam.nl         */
+/*   Created: 2022/02/11 16:09:47 by scleerdi      #+#    #+#                 */
+/*   Updated: 2022/07/20 17:02:08 by scleerdi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_putendl_fd(char const *s, int fd)
+int	ft_puthex_fd(unsigned int n, int fd)
 {
-	int	r;
+	char	*s;
 
-	r = 1;
-	r += ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', fd);
-	return (r);
+	s = ft_itoa_base(n, 8);
+	return (write(fd, s, ft_strlen(s)));
 }

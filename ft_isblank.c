@@ -1,23 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_putendl_fd.c                                    :+:    :+:            */
+/*   ft_isblank.c                                       :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: scleerdi <scleerdi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2021/11/08 14:21:37 by scleerdi      #+#    #+#                 */
-/*   Updated: 2022/07/20 17:12:24 by scleerdi      ########   odam.nl         */
+/*   Created: 2019/04/05 17:13:09 by scleerdi      #+#    #+#                 */
+/*   Updated: 2022/07/20 17:08:39 by scleerdi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	ft_putendl_fd(char const *s, int fd)
+int	ft_isblank(int c)
 {
-	int	r;
-
-	r = 1;
-	r += ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', fd);
-	return (r);
+	return (c == ' ' || c == '\t');
 }

@@ -1,23 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_putendl_fd.c                                    :+:    :+:            */
+/*   ft_printf.h                                        :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: scleerdi <scleerdi@student.codam.nl>         +#+                     */
+/*   By: simoncleerdin <simoncleerdin@student.co      +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2021/11/08 14:21:37 by scleerdi      #+#    #+#                 */
-/*   Updated: 2022/07/20 17:12:24 by scleerdi      ########   odam.nl         */
+/*   Created: 2022/02/08 14:44:53 by simoncleerd   #+#    #+#                 */
+/*   Updated: 2022/07/20 16:49:56 by scleerdi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
+# include "libft.h"
+# include <stdarg.h>
 
-int	ft_putendl_fd(char const *s, int fd)
-{
-	int	r;
+int	ft_printf(const char *format, ...);
 
-	r = 1;
-	r += ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', fd);
-	return (r);
-}
+#endif

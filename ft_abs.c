@@ -1,23 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_putendl_fd.c                                    :+:    :+:            */
+/*   ft_abs.c                                           :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: scleerdi <scleerdi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2021/11/08 14:21:37 by scleerdi      #+#    #+#                 */
-/*   Updated: 2022/07/20 17:12:24 by scleerdi      ########   odam.nl         */
+/*   Created: 2019/09/05 11:51:00 by scleerdi       #+#    #+#                */
+/*   Updated: 2019/09/05 11:52:08 by scleerdi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_putendl_fd(char const *s, int fd)
+intmax_t	ft_abs(intmax_t a)
 {
-	int	r;
-
-	r = 1;
-	r += ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', fd);
-	return (r);
+	if (a < 0)
+		a *= -1;
+	return (a);
 }

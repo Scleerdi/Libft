@@ -6,7 +6,7 @@
 /*   By: scleerdi <scleerdi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/08 14:22:55 by scleerdi      #+#    #+#                 */
-/*   Updated: 2022/07/20 17:13:02 by scleerdi      ########   odam.nl         */
+/*   Updated: 2022/07/27 14:41:41 by scleerdi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,8 @@ t_list		*ft_lstnew(void *content);
 t_list		*ft_lstlast(t_list *lst);
 t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
-char		*ft_itoa_base(intmax_t value, intmax_t base); //REWRITE
+//char		*ft_itoa_base(intmax_t value, intmax_t base); //REWRITE
+char		*ft_itoa_base(long value, int base);
 intmax_t	ft_abs(intmax_t a);
 
 #endif

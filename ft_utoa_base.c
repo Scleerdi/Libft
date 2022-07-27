@@ -6,7 +6,7 @@
 /*   By: scleerdi <scleerdi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/02/11 16:03:42 by scleerdi      #+#    #+#                 */
-/*   Updated: 2022/07/20 17:15:27 by scleerdi      ########   odam.nl         */
+/*   Updated: 2022/07/27 14:49:05 by scleerdi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	usize_str(size_t value, int base)
 	return (i);
 }
 
-char	convert(size_t n)
+static char	conv_c(size_t n)
 {
 	if (n < 10)
 		return (n + '0');
@@ -52,7 +52,7 @@ char	*ft_utoa_base(size_t value, size_t base)
 	while (value != 0)
 	{
 		n = value % base;
-		str[i] = convert(n);
+		str[i] = conv_c(n);
 		value /= base;
 		i--;
 	}
